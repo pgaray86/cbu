@@ -1,0 +1,128 @@
+import React, { Component } from 'react';
+import { allProducts } from '../utils/data';
+
+//Images
+import Logo from '../assets/images/Logo_Swiss_Medical_Seguros.png';
+//Styles
+import '../assets/css/bootstrap-grid.min.css'
+import '../assets/css/bootstrap.min.css';
+import '../assets/css/styles.css';
+import '../assets/css/productos.css';
+import '../assets/css/animations.css';
+
+class HomePage extends Component {
+    state = {
+        cuit: '',
+        cbu: ''        
+    }
+
+    
+
+    componentDidMount() {
+        const script = document.createElement("script");
+
+        script.src = "/assets/js/animate.js";
+        script.async = true;
+
+        document.body.appendChild(script);
+    }
+    
+    validaton = (e, field) => {
+        let regex = '';
+        const { value, keyCode } = e.target;
+
+        switch (field) {
+           
+            case 'cuit':
+                regex = /^[0-9]*$/;
+                if (keyCode === 8 || regex.test(value)) {
+                    this.setState({ cuit: value });
+                }
+                break;
+            case 'cbu':
+                regex = /^[0-9]*$/;
+                if (keyCode === 8 || regex.test(value)) {
+                    this.setState({ cbu: value });
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+                <div className="main animatedParent" data-sequence='400'>
+                    <nav className="container">
+
+                        <div className="row">
+                            <div className="col-6 col-md-4 logo"><img className="animated fadeInLeftShort" data-id="1" src={Logo} alt="Swiss Medical" /> </div>                           
+                        </div>
+
+                    </nav>
+
+                    {/* <header>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-xl-6 col-md-8 col-10 claim animated fadeInDown" data-id="3">
+                                    <h1>Nos unimos para llegar <span>más lejos</span> nos transformamos para estar <span>más cerca</span></h1>
+                                </div>
+                                <ul className="col-xl-6 col-md-8 col-10 unidades animated fadeInLeftShort" data-id="4">
+                                    <li><a href="https://www.smgseguros.com.ar" target="_blank" rel="noopener noreferrer"><img src={Seguros} alt="Swiss Medical Seguros" /></a></li>
+                                    <li><a href="https://www.smglife.com.ar" target="_blank" rel="noopener noreferrer"><img src={Life} alt="Swiss Medical Life" /></a></li>
+                                    <li><a href="https://www.smgart.com.ar" target="_blank" rel="noopener noreferrer"><img src={Art} alt="Swiss Medical ART" /></a></li>
+                                </ul>
+                                <div className="col-12 scrolldown"><a className="js-scroll-trigger" href="#prod"><i className="fal fa-chevron-circle-down fa-4x"></i></a></div>
+                            </div>
+                        </div>
+                    </header> */}
+
+                </div>
+
+                <section id="contacto">
+                    <div className="container">
+                        <h1><center>Ingrese los datos a validar</center></h1>
+                    
+                        <form method='post' onSubmit={this.handleForm} data-aos="fade-in">                            
+                            
+                            <label htmlFor="cuit">CUIT:</label>
+                            <input
+                                type="text"
+                                name="cuit"
+                                id="cuit"
+                                pattern="[0-9]{10}"
+                                minLength={10}
+                                maxLength={10}
+                                title="Ingrese un CUIT valido"
+                                value={this.state.cuit}
+
+                                onChange={(e) => this.validaton(e, 'cuit')}
+                                required />
+                            <br />
+
+                            <label htmlFor="cbu">CBU:</label>
+                            <input
+                                type="text"
+                                name="cbu"
+                                id="cbu"
+                                pattern="[0-9]{10}"
+                                minLength={22}
+                                maxLength={22}
+                                title="Ingrese un CBU válido"
+                                value={this.state.cbu}
+                                onChange={(e) => this.validaton(e, 'cbu')}
+                                required />
+                          
+
+                            <input type="submit" name="button" id="button" value="Validar" />
+                        </form>
+
+                    </div>
+                </section>
+            </React.Fragment>
+        );
+    }
+}
+
+export default HomePage;

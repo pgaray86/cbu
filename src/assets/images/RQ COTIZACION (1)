@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.ws.icard.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:cotizar>
+       <xml>
+        
+<![CDATA[
+<cotizacion>
+<pais>540</pais>
+<codigoAgencia>89061</codigoAgencia>
+<numeroSucursal>0</numeroSucursal>
+<cantidadDias>8</cantidadDias>
+<fechaInicio>31/10/2019</fechaInicio>
+<fechaFin>08/11/2019</fechaFin>
+<planFamiliar>false</planFamiliar>
+
+<clientes>
+<clienteCotizacion>
+<nombre>Pablo</nombre>
+<apellido>Garay</apellido>
+<edad>33</edad>
+<fechaNacimiento>29/04/1986</fechaNacimiento>
+</clienteCotizacion>
+
+</clientes>
+
+</cotizacion>]]>
+        
+        </xml>
+         <usuario>VIAJETWS</usuario>
+         <password>123456</password>
+      </ser:cotizar>
+   </soapenv:Body>
+</soapenv:Envelope>

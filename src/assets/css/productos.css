@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.productos {
+    background: #e1e1e1;
+    padding: 5em 0;
+    font-family: Roboto;
+}
+
+.productos h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.productos ul {
+    padding: 0;
+}
+
+.productos ul li {
+    list-style: none;
+}
+
+.productos ul li span {
+    background: #fff;
+    height: 330px;
+    display: block;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    padding: 150px 30px 30px;
+    margin-bottom: 30px;
+}
+
+.productos ul li span figure {
+    color: #ea002b;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.productos ul li span figcaption {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.productos ul li span a {
+    color: #ea002b;
+    background: #fff;
+    padding: 7px 0 5px;
+    border: 1px solid #ea002b;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 60px;
+    left: 30%;
+}
+
+.productos ul li span a:hover {
+    transform: scale(1.1);
+    background: #ea002b;
+    color:#fff;
+}
+
+.productos ul li span a:hover {
+    text-decoration: none;
+}
+
+.productos ul li span.seguro {
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.productos ul li span.auto {
+    background-image: url(../images/homepage/seguro_auto.jpg);
+}
+.productos ul li span.hogar {
+    background-image: url(../images/homepage/seguro_hogar.jpg);
+}
+.productos ul li span.vida {
+    background-image: url(../images/homepage/seguro_vida.jpg);
+}
+.productos ul li span.accidente {
+    background-image: url(../images/homepage/seguro_accidentes.jpg);
+}
+.productos ul li span.sepelio {
+    background-image: url(../images/homepage/seguro_sepelio.jpg);
+}
+.productos ul li span.salud {
+    background-image: url(../images/homepage/seguro_salud.jpg);
+}
+
+@media (max-width: 1366px) {
+
+.productos {
+    padding: 3em 0;
+}
+    
+.productos h2 {
+    margin-bottom: 1.5em;
+}
+    
+.productos ul {
+    padding: 0 3em;
+}
+}
+
+@media (max-width: 1024px) {
+    
+.productos ul {
+    padding: 0;
+}
+}
+
+@media (max-width: 768px) {
+.productos ul li span a {
+  width: 60%;
+  left: 20%;
+}
+}
+
+@media (max-width: 425px) {
+
+    .productos ul li span {
+        height: 390px;
+        padding: 190px 30px 30px;
+    }
+
+    .productos ul li span figcaption {
+        font-size: 27px;
+        line-height: 30px;
+    }
+
+    .productos ul li span.seguro {
+        background-size: 78%;
+    }
+
+    .productos ul li span a {
+        padding: 10px 0 7px;
+        width: 80%;
+        left: 10%;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 375px) {
+.productos ul li span {
+ padding: 170px 30px 30px;
+    }
+ .productos ul li span.seguro {
+        background-size: 80%;
+    }    
+    
+}
+@media (max-width: 360px) {
+    .productos ul li span {
+  
+        padding: 180px 30px 30px;
+    }
+
+    .productos ul li span.seguro {
+        background-size: 85%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .productos ul li span {
+        height: 360px;
+        padding: 170px 30px 30px;
+    }
+
+    .productos ul li span figcaption {
+        font-size: 24px;
+
+    }
+    .productos ul li span figure {
+        margin-bottom: 0px;
+    }
+.productos ul li span.seguro {
+        background-size: 90%;
+    }
+
+    .productos ul li span a {
+        font-size: 19px;
+    }
+}

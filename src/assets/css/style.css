@@ -1,0 +1,703 @@
+body{
+  overflow-x: hidden;
+  background: #F6F6F6;
+  font-family: "Roboto", sans-serif;
+}
+
+#bgBlanco{
+  background: #fff;
+}
+
+.limpia{
+  clear: both;
+}
+
+.noPadding{
+  padding: 0;
+}
+
+/*TOP*/
+
+#top .fotoTop{
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background-size: cover;
+  padding: 20px;
+}
+
+#top .fotoTop.auto{
+  background:url(../images/seguro_autos.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+#top .fotoTop.hogar{
+  background:url(../images/seguro_hogar.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+#top .fotoTop.salud{
+  background:url(../images/seguro_salud.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+#top .fotoTop.vida{
+  background:url(../images/seguro_vida.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+#top .fotoTop.accidente{
+  background:url(../images/accidentes_personales.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+#top .fotoTop.sepelio{
+  background:url(../images/sepelio.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+#top .fotoTop .logoHome{
+  width: 206px;
+  height: 37px;
+  background: url(../images/logo.svg) no-repeat;
+  position: relative;
+  z-index: 2;
+  background-size: cover;
+}
+
+#top .fotoTop p a{
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  z-index: 2;
+  float: right;
+  padding: 0;
+  margin: -55px 0 0 0;
+
+}
+
+#top .topInterna{
+  box-shadow: 0px 2px 6px #0000000A;
+  height: 70px;
+  background: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+#top .logoInterno{
+  width:206px;
+  height: 37px;
+  background: url(../images/logo-swiss-interna.svg) no-repeat;
+  background-size: contain;
+  margin: 15px 0 0 50px;
+  float: left;
+}
+
+#top p a{
+  font-family: "Roboto", sans-serif;
+  color: #3A3939;
+  font-size: 12px;
+  float: right;
+  margin: 0 50px 0 0;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 70px;
+
+  
+}
+
+#top p a:hover{
+  -webkit-transition:color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+
+  color: #E2000b;
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+/*MAIN*/
+
+.wrapper{
+  position: relative;
+  margin: -120px auto 0;
+  min-height: 500px;
+  background: #fff;
+  z-index: 1;
+  -webkit-border-top-left-radius: 50px;
+  -webkit-border-top-right-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-topright: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 40px  40px 0  40px;
+
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.secondSection{ 
+  min-height: 500px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  padding: 40px  40px 0  40px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+#main h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 58px;
+  color: #363636;
+  letter-spacing: -2px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#main .subrayado{
+  width: 50px;
+  height: 2px;
+  background: #E2000b;
+  margin-bottom: 50px;
+}
+
+#main .subrayado.center{
+  margin: 20px auto 50px;
+}
+
+#main .subrayado.center.sinTop{
+  margin: 0px auto 50px;
+}
+
+
+#main p{
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  color: #666666;
+}
+
+#main p.center{
+  text-align: center;
+}
+
+#main h3{
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #363636;
+  padding: 0;
+  margin: 70px auto 30px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#main h3 strong{
+  font-weight: 700;
+}
+
+#main h3.relacionados{
+  text-align: left;
+  font-weight: 600;
+  margin: 30px auto 30px;
+}
+
+#main h5{
+  font-size: 24px;
+  color: #3A3939;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  max-width: 220px;
+  margin-bottom: 50px;
+}
+
+#main h5.center{
+  max-width: inherit;
+}
+
+#main h5.derecha{
+  float: right;
+}
+
+#main h5 strong{
+  font-weight: 700;
+}
+
+#comparativo.oneColumn{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#comparativo .diferente{
+  width: 15px;
+  height: 15px;
+  background: url(../images/cruz.png) no-repeat;
+  margin: 7px auto 0;
+}
+
+#comparativo .igual{
+  width: 19px;
+  height: 15px;
+  background: url(../images/check.png) no-repeat;
+  margin: 7px auto 0;
+}
+
+#comparativo .igual.hogar{
+  float: right;
+}
+
+#comparativo p{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+#comparativo p.hogar{
+  text-align: left;
+}
+
+#comparativo .row.renglon{
+  border-top:1px solid #dadada;
+  padding: 5px;
+}
+
+.bgGris{
+  background: #fff;
+}
+
+#comparativo .hiddenDesktop{
+  display: none;
+}
+
+#comparativo .hiddenMob{
+  display: inline-block;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+/*FOOTER*/
+
+.line{
+  border-right: 1px solid #fff;
+  margin-top: 50px;
+  height: 40px;
+}
+
+
+
+.beforeFooter{
+  width: 100%;
+  background: #fff;
+  min-height: 150px;
+  position: relative;
+  z-index: 1;
+  padding: 50px 0 30px 0;
+}
+
+.beforeFooter p{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+#main .beforeFooter p, #contacto .beforeFooter p, #gracias .beforeFooter p{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+#footer .preFooter{
+  width: 100%;
+  min-height:140px;
+  background: #383838;
+  padding-bottom: 20px;
+}
+
+#footer .preFooter p{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+
+}
+
+#footer .preFooter p.topMedium{
+  padding-top: 10px;
+}
+
+#footer .preFooter p.topPlus{
+  padding-top: 60px;
+}
+
+#footer .preFooter .logo-ssn{
+  width: 100%;
+  max-width:260px;
+  height: 42px;
+  background: url(../images/logo-ssn.png) no-repeat;
+  background-size: contain;
+  margin: 47px auto 0;
+}
+
+#footer .preFooter p a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer{
+  width: 100%;
+  min-height: 260px;
+  background: #f6f6f6;
+  padding: 20px;
+}
+
+#footer .footer p{
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  color: #3A3939;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+/*CONTACTO */
+
+.negative{
+  margin-left: -25%;
+}
+
+#contacto{
+  padding-top: 44px;
+}
+
+h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  color: #363636;
+  margin-bottom: 40px;
+}
+
+#contacto p{
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #666666;
+  line-height: 30px;
+}
+
+h2{
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  color: #363636;
+  font-weight:700;
+}
+
+form{
+  margin-left:17%;
+  width: 100%;
+  max-width: 650px;
+  margin-top: 50px;
+}
+
+label{
+  font-family: "Roboto", sans-serif;
+  color: #797979;
+  font-size: 18px;
+  font-weight: 300;
+  width: 235px;
+  text-align: left;
+  line-height: 50px;
+  margin-right: 10px;
+}
+
+input{
+  font-family: "Roboto", sans-serif;
+  -webkit-appearance: none;
+  width: 300px;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #666;
+  transition: all 0.15s ease;
+}
+
+select {
+  font-family: "Roboto", sans-serif;
+  width: 300px;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #666;
+  transition: all 0.15s ease;
+}
+
+
+input:hover {
+  background: rgba(34,50,84,0.03);
+  border-bottom: 2px solid #E2000b;
+}
+
+select:hover {
+  background: rgba(34,50,84,0.03);
+  border-bottom: 2px solid #E2000b;
+}
+
+input, select:focus {
+  background: none;
+  outline: none;
+
+}
+
+input#button{
+  background: #E2000b;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin: 60px auto 150px;
+  height: 45px;
+  width: 250px;
+  border:none;
+  border-radius: 25px;
+  display: block;
+  font-weight: 400;
+}
+
+input#button.home{
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 350px;
+}
+
+input#button.accidentesPersonales {
+  margin: 0px auto 50px;
+  width: 100%;
+  max-width: 350px;
+}
+
+
+input#button.home.pie {
+  margin: 50px auto 50px;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+
+/*CARD*/
+
+.card{
+  text-align: center;
+  margin:60px auto 0;
+  width: 100%;
+  max-width: 225px;
+  height: 380px;
+  position: relative;
+}
+
+.card.hogar{
+  width: 100%;
+  max-width: 100%;
+}
+
+.card .ico{
+  width: 155px;
+  height: 155px;
+  margin: 0 auto;
+}
+
+.card .ico.cobertura{
+  background: url(../images/cobertura.svg) no-repeat;
+}
+
+.card .ico.beneficios{
+  background: url(../images/beneficios.svg) no-repeat;
+}
+
+.card .ico.servicios{
+  background: url(../images/servicios.svg) no-repeat;
+}
+
+.card .ico.casa{
+  background: url(../images/ico-casa.svg) no-repeat;
+}
+
+.card .ico.estrella{
+  background: url(../images/ico-estrella.svg) no-repeat;
+}
+
+.card .ico.venticuatro{
+  background: url(../images/ico-24hs.svg) no-repeat;
+}
+
+.card h4{
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  font-size: 16px;
+  margin: 22px 0 22px 0;
+}
+
+#main .card p.txt{
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+#main .card p.btnSaber a {
+  text-decoration: none;
+  color: #E4002B!important;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+
+/*CARDS REALCIONADOS */
+
+.prodRelacionado{
+  width: 100%;
+  box-shadow: 0px 3px 6px #00000029;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.prodRelacionado .icoRel{
+  width:23px;
+  height: 19px;
+  background: url(../images/ico-rel.svg) no-repeat;
+}
+
+.prodRelacionado .fotoRel{
+  width: 100%;
+  min-width: 237px;
+  min-height: 192px;
+  float: right;
+}
+
+.prodRelacionado .fotoRel.thumbAccidente{
+  background: url(../images/accidentes_personales_thumb.png) no-repeat;
+  background-size: cover;
+}
+
+.prodRelacionado .fotoRel.thumbAuto{
+  background: url(../images/seguro_auto_thumb.png) no-repeat;
+  background-size: cover;
+}
+
+.prodRelacionado .fotoRel.thumbHogar{
+  background: url(../images/seguro_hogar_thumb.png) no-repeat;
+  background-size: cover;
+}
+
+.prodRelacionado .fotoRel.thumbSalud{
+  background: url(../images/seguro_salud_thumb.png) no-repeat;
+  background-size: cover;
+}
+
+.prodRelacionado .fotoRel.thumbSepelio{
+  background: url(../images/seguro_sepelio_thumb.png) no-repeat;
+  background-size: cover;
+}
+
+.prodRelacionado .fotoRel.thumbVida{
+  background: url(../images/seguro_vida_thumb.png) no-repeat;
+  background-size: cover;
+}
+
+#main .prodRelacionado p{
+  font-family: "Roboto";
+  font-size: 22px;
+  color: #363636;
+  line-height: 24px;
+  font-weight: 500;
+  height: 40px;
+  margin-top: 10px;
+}
+
+
+#main  a .prodRelacionado:hover p{
+  color: #E4002B;
+}
+
+/*GRACIAS */
+
+.gracias{
+  width: 119px;
+  height: 119px;
+  background: url(../images/gracias.svg) no-repeat;
+  margin:70px auto 40px;
+}
+
+#gracias h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  color: #363636;
+  text-align: center;
+  font-weight: 200;
+}
+
+#gracias p{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #363636;
+  text-align: center;
+  font-weight: 200;
+}
+
+.accordion-content p{
+  font-family: "Roboto";
+  font-size: 22px;
+  color: #666666;
+  text-align: center;
+}
+
+.hiddenMob{
+  display: block;
+}
+
+.showMob{
+  display: none;
+}
+
+.small{
+    font-size: 17px!important;
+    width: 50%;
+    margin: 0 auto 40px;
+}

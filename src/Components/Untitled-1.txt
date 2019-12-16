@@ -1,0 +1,106 @@
+import React, { Component } from 'react';
+import serialize from 'form-serialize';
+import Footer from '../Footer/Footer';
+import BeforeFooter from '../Footer/BeforeFooter';
+import HeaderTwo from '../Header/HeaderTwo';
+
+//api method
+import { getToken, saveData } from '../utils/api';
+
+class ContactHomeInsurance extends Component {
+    state = {
+        cuit: '',
+        cbu: ''        
+    }
+
+    componentDidMount() {
+        this.setState({ coverage: window.location.href.split('#')[1] });
+        this.generateToken();
+    }
+
+    generateToken() {
+        getToken()
+            .then(res => this.setState({ token: res.data.token, disable: false }))
+            .catch(e => console.log(e));
+    }
+
+    handleForm = e => {
+        e.preventDefault();
+        this.setState({ disable: true })
+
+        let values = serialize(e.target, { hash: true });       
+        if (!this.state.token) return this.generateToken();
+
+        saveData(values, this.state.token)
+            .then(res => window.location.href = '/gracias')
+            .catch(err => this.setState({ disable: false }));
+    }
+
+    validaton = (e, field) => {
+        let regex = '';
+        const { value, keyCode } = e.target;
+
+        switch (field) {
+            case 'cuit':
+                regex = /^[0-9]*$/;
+                if (keyCode === 8 || regex.test(value)) {
+                    this.setState({ telefono: value });
+                }
+                break;
+            case 'cbu':
+                // regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                regex = /^[0-9]*$/;
+                if (keyCode === 8 || regex.test(value)) {
+                    this.setState({ telefono: value });
+                }
+                break;        
+        }
+    }
+
+    render() {
+        return (
+            <div id="bgBlanco">
+                <HeaderTwo />
+                <section id="contacto">
+                    <div className="container">
+                        <h1>Validacion CUIT/CBU</h1>                        
+
+                        <form method='post' onSubmit={this.handleForm} data-aos="fade-in">                            
+
+                            <label htmlFor="textfield">CUIT:</label>
+                            <input
+                                type="text"
+                                name="cuit"
+                                id="cuit"
+                                pattern="[0-9]{11}"
+                                title="Ingrese un CUIT válido"
+                                value={this.state.cuit}
+                                onChange={(e) => this.validaton(e, 'cuit')}
+                                required />
+                            <br />
+
+                            <label htmlFor="textfield">CBU:</label>
+                            <input
+                                type="text"
+                                name="cbu"
+                                id="cbu"
+                                pattern="[0-9]{22}"
+                                value={this.state.cbu}
+                                onChange={(e) => this.validaton(e, 'cbu')}
+                                required />
+                            <br />
+                           
+
+                            <input type="submit" name="button" id="button" value="Validar" disabled={this.state.disable} style={{ opacity: this.state.disable ? 0.5 : 1 }} required />
+                        </form>
+
+                     
+                    </div>
+                </section>
+             
+            </div>
+        );
+    }
+}
+
+export default ContactHomeInsurance;

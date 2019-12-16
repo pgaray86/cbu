@@ -1,0 +1,199 @@
+@media (max-width: 1280px) {      
+}
+
+@media (max-width: 1024px) {
+  
+  #footer .preFooter p{
+    font-size: 12px;
+  }
+}  
+
+@media (max-width: 994px) {
+  
+  #footer .preFooter .logo-ssn {
+    margin-top: 50px;
+    margin: 40px auto 0;
+  }
+
+  #footer .preFooter {
+    padding-bottom: 40px;
+  }
+
+  .line.hideSM{
+    border-right: none;
+  }
+  
+}
+
+@media (max-width: 991px) {
+
+  #comparativo p.hogar {
+    text-align: center;
+}
+
+  #comparativo .igual.hogar {
+    float: none;
+    margin: 10px auto;
+}
+
+  .hiddenMob{
+    display: none;
+  }
+  
+  .showMob{
+    display: block;
+  }
+
+  #comparativo.oneColumn {
+    width: 90%;
+  }
+
+  #main h5{
+    margin: 0 auto 50px;
+  }
+
+  #main h5.derecha {
+    float: none;
+    margin: 0 auto 50px;
+}
+
+.bgGris{
+  background: #f1f1f1;
+}
+ 
+#comparativo .hiddenDesktop{
+  display: inline-block;
+  padding: 10px;
+  border-top: 1px solid #dadada;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  background: #fbfbfb;
+}
+
+#comparativo .row.renglon {
+  border: none;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+#comparativo.oneColumn .row.renglon{
+  border-top:1px solid #dadada;
+}
+
+#comparativo .hiddenMob{
+  display: none;
+}
+
+input#button.home {
+  max-width: 350px;
+  margin: 0px auto 50px;
+}
+
+#main h1 {
+  font-size: 47px;
+}
+
+.fotoTop {
+  height: 40vh;
+}
+
+}
+  
+@media (max-width: 830px) {
+
+  form {
+    margin: 50px auto 0!important;
+  }
+
+  .negative {
+    margin-left: 0%;
+  }
+  
+  .line {
+    border-right: none;
+    margin-top: 30px;
+  }
+
+  #footer .preFooter p.topPlus {
+    padding-top: 20px;
+  }
+
+  #footer .preFooter p.topMedium {
+    padding-top: 0px;
+  }
+
+  #footer .preFooter .logo-ssn {
+    margin: 0px auto 0;
+  }
+
+}  
+
+
+
+@media (max-width: 541px) {
+
+  .wrapper {
+    padding: 30px;
+  }
+
+  input, select{
+    height: 43px;
+    width: 100%;
+    background: rgba(34,50,84,0.03);
+  }
+
+  label{
+    text-align: left;
+    padding-bottom: 0!important;
+    height: 36px;
+  }
+
+  input#button {
+    margin: 40px auto 120px;
+  }
+
+  #top p a {
+    margin: 0 15px 0 0;
+  }
+
+  #top .logoInterno {
+    width: 176px;
+    margin: 19px 0 0 20px;
+  }
+
+  #main h5{
+    font-size: 18px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  #top .fotoTop {
+    height: 35vh;
+  }
+
+  #top .fotoTop .logoHome {
+    width: 170px;
+    height: 30px;
+  }
+
+}
+
+@media (max-width: 465px) {
+
+  #main h1 {
+    font-size: 39px;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  h1 {
+    font-size: 24px;
+  }
+}
